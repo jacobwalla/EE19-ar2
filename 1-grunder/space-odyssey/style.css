@@ -1,0 +1,9 @@
+body {
+    background: #000 url(./bilder/earth.jpg) no-repeat 700px 0;
+    background-size: 1000px 1000px;
+}
+h1 {
+    font: bold 140px sans-serif;
+    color: #FFF;
+    width: 500px;
+}
