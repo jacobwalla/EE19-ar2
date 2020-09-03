@@ -1,0 +1,23 @@
+body {
+    background-image: url("./bilder/jeremy-bishop-G9i_plbfDgk-unsplash.jpg");
+    background-size: contain;
+    background-attachment: fixed;
+}
+h1 {
+    color: darksalmon;
+    font-size: 35px;
+    font-family: 'DM Serif Display', serif;
+}
+h2 {
+    color: white;
+    font-size: 25px;
+    font-family: 'DM Serif Display', serif;
+}
+p {
+    color: white;
+    font-size: 15px;
+    font-family: 'Bree Serif', serif;
+}
+a {
+    color: white;
+}
