@@ -1,0 +1,31 @@
+body{
+    background-image: url(./bilder/resor-fiji_5_big.jpg);
+}
+h1{
+    font-family: 'Nunito', sans-serif;
+    font-size: 150px;
+    color: white;
+    margin-left: 120px;
+}
+h2{
+    font-family: 'Nunito', sans-serif;
+    font-size: 80px;
+    color: white;
+    margin-left: 120px;
+}
+p{
+    font-family: 'Nunito', sans-serif;
+    font-size: 60px;
+    color: white;
+    margin-top: 300px;
+    margin-left: 1400px;
+    border: 5px solid white;
+    background-color: rgb(122, 164, 255);
+    border-radius: 25px;
+    padding: 20px;
+    width: 15%;
+}
+a{
+   font-family: 'Nunito', sans-serif;
+   color: white; 
+}
