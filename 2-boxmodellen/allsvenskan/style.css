@@ -1,0 +1,41 @@
+body{
+    background: url(./bilder/nathan-rogers-I9HyW30buuQ-unsplash.jpg);
+}
+table{
+    font-family: 'Montserrat', sans-serif;
+    background: white;
+    width: 1000px;
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+}
+caption{
+    font-size: 30px;
+    background: darkslateblue;
+    padding: 20px;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+tr:nth-child(2){
+    background: violet;
+    color: white;
+}
+tr:nth-child(odd){
+    background: #eeeded;
+}
+tr:nth-child(1){
+    background: darkslateblue;
+    color: white;
+}
+th{
+    font-size: 28px;
+    padding: 20px;
+}
+td{
+    font-size: 25px;
+    padding: 20px;
+}
+img{
+    width: 20px;
+}
