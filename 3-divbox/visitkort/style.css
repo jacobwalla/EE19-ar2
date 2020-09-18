@@ -16,27 +16,27 @@ body{
 }
 div{
     background: url(./bilder/sebastian-ramirez-sanchez-ZFnK6RpYB7g-unsplash.jpg);
-    width: 800px;
-    height: 500px;
+    width: 500px;
+    height: 300px;
     border-radius: 20px;
     margin: 100px auto 0 auto;
-    background-size: 800px;
+    background-size: 500px;
     color: black;
     box-shadow: 0px 0px 200px violet;
-    padding-left: 60px;
-    padding-top: 50px;
+    padding-left: 20px;
+    padding-top: 30px;
 }
 h1{
     font-family: 'Ubuntu', sans-serif;
-    font-size: 50px;
+    font-size: 30px;
     font-weight: bold;
     text-transform: uppercase;
 }
 h2{
     font-family: 'Ubuntu', sans-serif;
-    font-size: 30px;
+    font-size: 20px;
 }
 p{
     font-family: 'Noto Sans KR', sans-serif;
-    font-size: 25px;
+    font-size: 15px;
 }
