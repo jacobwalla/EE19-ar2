@@ -1,0 +1,128 @@
+/* Enkel CSS-reset */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body, h1, h2, h3, h4, h5, h6, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: url(./bilder/242.jpg);
+    background-size: 1000px;
+}
+body.andrasidan {
+    background: url(./bilder/5086.jpg);
+    background-size: 1000px;
+}
+body.tredjesidan {
+    background: url(./bilder/26669.jpg);
+    background-size: 3000px;
+}
+body.fjärdesidan {
+    background: url(./bilder/242.jpg);
+    background-size: 1000px;
+}
+body.femtesidan {
+    background: url(./bilder/5086.jpg);
+    background-size: 1000px;
+}
+body.sjätte {
+    background: url(./bilder/26669.jpg);
+    background-size: 3000px;
+}
+div.box1 {
+    background: white;
+    width: 800px;
+    height: auto;
+    border-radius: 10px;
+    padding: 50px;
+    margin: 50px auto 50px auto;
+    color: rgb(255, 119, 237);
+    border: 15px solid rgb(255, 119, 237);
+    border-style: dashed;
+
+}
+div.box2 {
+    background: white;
+    width: 800px;
+    height: auto;
+    border-radius: 10px;
+    padding: 50px;
+    margin: 50px auto 50px auto;
+    color: rgb(119, 128, 255);
+    border: 15px solid rgb(119, 128, 255);
+    border-style: dashed;
+
+}
+div.box3 {
+    background: white;
+    width: 800px;
+    height: auto;
+    border-radius: 10px;
+    padding: 50px;
+    margin: 50px auto 50px auto;
+    color: rgb(119, 255, 248);
+    border: 15px solid rgb(119, 255, 248);
+    border-style: dashed;
+
+}
+div.box4 {
+    background: white;
+    width: 800px;
+    height: auto;
+    border-radius: 10px;
+    padding: 50px;
+    margin: 50px auto 50px auto;
+    color: rgb(135, 255, 119);
+    border: 15px solid rgb(135, 255, 119);
+    border-style: dashed;
+
+}
+div.box5 {
+    background: white;
+    width: 800px;
+    height: auto;
+    border-radius: 10px;
+    padding: 50px;
+    margin: 50px auto 50px auto;
+    color: rgb(253, 255, 119);
+    border: 15px solid rgb(253, 255, 119);
+    border-style: dashed;
+
+}
+div.box6 {
+    background: white;
+    width: 800px;
+    height: auto;
+    border-radius: 10px;
+    padding: 50px;
+    margin: 50px auto 50px auto;
+    color: rgb(255, 119, 119);
+    border: 15px solid rgb(255, 119, 119);
+    border-style: dashed;
+
+}
+h1 {
+    font-family: 'Architects Daughter', cursive;
+    text-transform: uppercase;
+    font-size: 60px;
+    margin-bottom: 30px;
+}
+p {
+    font-family: 'Courgette', cursive;
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+a {
+    font-family: 'Courgette', cursive;
+    font-size: 80px;
+    text-decoration: none;
+    color: rgb(255, 205, 112);
+}
+a:hover {
+    color: rgb(188, 255, 112);
+}
