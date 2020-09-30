@@ -1,0 +1,66 @@
+/* Enkel CSS-reset */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body, h1, h2, h3, h4, h5, h6, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(./bilder/malte-schmidt-enGr5YbjQKQ-unsplash.jpg);
+    background-position: center;
+}
+.kontainer {
+    width: 1200px;
+    margin: auto;
+    padding: 60px;
+    background: #2d4671e3;
+    color: #7689A9;
+    border-radius: 5px;
+    margin-top: 50px;
+}
+h1 {
+    font-family: 'Grenze Gotisch', cursive;
+    font-size: 100px;
+    text-align: center;
+    text-shadow: 2px 2px 2px white;
+    margin-bottom: 20px;
+}
+.intro {
+    font-family: 'Piazzolla', serif;
+    font-size: 30px;
+    text-align: center;
+    text-shadow: 1px 1px 1px white;
+    margin-bottom: 30px;
+}
+.bild {
+    background: #4D658D;
+    padding: 50px;
+    color: #051838;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    font-family: 'Piazzolla', serif;
+    font-size: 20px;
+    
+}
+img {
+    width: 500px;
+    margin-bottom: 20px;
+    margin-right: 30px;
+    float: left;
+}
+hr{
+    visibility: hidden;
+    clear: both;
+}
+.tack {
+    font-family: 'Piazzolla', serif;
+    font-size: 15px;
+}
+a{
+    color: #0066ff;
+}
