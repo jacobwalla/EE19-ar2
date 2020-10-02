@@ -38,14 +38,20 @@ h1 {
     margin-bottom: 30px;
 }
 .bild {
-    background: #4D658D;
+    background-image: linear-gradient(to right top, #051937, #0f3e65, #116994, #0c96c2, #15c7ed);
     padding: 50px;
-    color: #051838;
+    color: #111a29;
     margin-bottom: 30px;
     border-radius: 10px;
     font-family: 'Piazzolla', serif;
     font-size: 20px;
-    
+
+}
+.höger {
+    width: 500px;
+    margin-bottom: 20px;
+    margin-left: 30px;
+    float: right;
 }
 img {
     width: 500px;
@@ -53,7 +59,7 @@ img {
     margin-right: 30px;
     float: left;
 }
-hr{
+hr {
     visibility: hidden;
     clear: both;
 }
@@ -61,6 +67,6 @@ hr{
     font-family: 'Piazzolla', serif;
     font-size: 15px;
 }
-a{
+a {
     color: #0066ff;
 }
