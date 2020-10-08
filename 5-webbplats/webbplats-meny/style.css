@@ -1,3 +1,12 @@
+/* CSS HEX */
+:root{
+--eerie-black: #141414ff;
+--space-cadet: #1e325cff;
+--bright-yellow-crayola: #fdb035ff;
+--platinum: #e5e5e5ff;
+--white: #ffffffff;
+}
+
 /* Enkel CSS-reset */
 html {
     box-sizing: border-box;
@@ -10,33 +19,97 @@ body, h1, h2, h3, h4, h5, h6, p, ul {
     padding: 0;
 }
 
-body{
+/* Sidans utseednde */
 
+.kontainer{
+    background: var(--platinum);
+    width: 1200px;
+    margin: auto;
+    padding: 50px;
 }
-div{
 
-}
-h1{
+/* Sidans rubriker */
 
+.kontainer h1{
+    font-family: 'Grenze Gotisch', cursive;
+    color: var(--bright-yellow-crayola);
+    font-size: 170px;
+    text-align: center;
+    margin-bottom: 30px;
+    text-shadow: 1px 1px 10px rgb(158, 158, 158);
 }
-ul{
+.kontainer h2{
+    font-family: 'Grenze Gotisch', cursive;
+    color: var(--eerie-black);
+    text-align: center;
+    font-size: 70px;
+    margin: 30px;
+}
 
-}
-h2{
+/* Menyns utseende */
 
+.kontainer ul{
+    list-style-type: none;
+    text-align: center;
 }
-figure{
+.kontainer ul li{
+    font-family: 'Sansita Swashed', cursive;
+    font-weight: bold;
+    font-size: 20px;
+    display: inline
+}
+.kontainer ul a{
+    text-decoration: none;
+    color: white;
+    background: var(--space-cadet);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px black;
+    width: 200px;
+    display: inline-block;
+}
+.kontainer ul a:hover{
+    color: var(--space-cadet);
+    background: var(--bright-yellow-crayola);
+    box-shadow: none;
+}
 
+.kontainer ul a.aktiv{
+    color: var(--space-cadet);
+    background: var(--bright-yellow-crayola);
 }
-img{
-    width: 500px;
-}
-figcaption{
 
-}
-p{
+/* Bild delens utseende */
 
+.kontainer figure{
+    background: white;
+    width: 600px;
+    margin: auto;
+    padding: 30px;
+    box-shadow: 1px 1px 5px rgb(158, 158, 158);
 }
-a{
+.kontainer figure img{
+    width: 100%;
+    margin-bottom: 10px;
+}
+.kontainer figure figcaption{
+    font-family: 'Libre Baskerville', serif;
+    color: var(--eerie-black);
+    font-size: 20px;
+}
 
+/* Sidans text */
+
+.kontainer p{
+    font-family: 'Libre Baskerville', serif;
+    color: var(--eerie-black);
+    font-size: 30px;
+    margin-top: 40px;
+}
+.kontainer p a{
+    background: var(--bright-yellow-crayola);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 3px;
 }
