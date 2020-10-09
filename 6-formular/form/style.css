@@ -11,41 +11,67 @@ body, h1, h2, h3, h4, h5, h6, p, ul {
 }
 
 /* Formulärets utseende */
-body{
-    
+body {
+    background: url(./bilder/luca-micheli-ruWkmt3nU58-unsplash.jpg);
 }
-form{
-    background: radial-gradient(circle, rgba(57,178,223,1) 32%, rgba(73,72,127,1) 100%);
-    margin: auto;
+form {
+    background: radial-gradient(circle, rgba(57, 178, 223, 1) 32%, rgba(73, 72, 127, 1) 100%);
+    margin: 100px auto;
     width: 600px;
     padding: 30px;
     border-radius: 20px;
+
+    /* Två kolumner */
     display: grid;
-    grid-template-columns: 120px auto;
+    grid-template-columns: 150px auto;
+    gap: 20px;
 }
-form label{
+form label {
     font-family: 'Josefin Sans', sans-serif;
     color: white;
 }
-form input{
-    font-family: 'Nova Mono', monospace;
-    margin-bottom: 25px;
+form input {
+    font-family: 'Anonymous Pro', monospace;
     padding: 5px;
-    background: rgb(47, 79, 80);
+    background: rgb(112, 179, 182);
     color: white;
     border: none;
     border-radius: 5px;
+    font-size: 15px;
 }
-form button{
+form input[type="radio"], form input[type="checkbox"] {
+    font-family: 'Anonymous Pro', monospace;
+    padding: 5px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+}
+div{
+    color: white;
+}
+form select {
+    font-family: 'Anonymous Pro', monospace;
+    padding: 5px;
+    background: rgb(112, 179, 182);
+    color: white;
+}
+form textarea {
+    font-family: 'Anonymous Pro', monospace;
+    padding: 5px;
+    background: rgb(112, 179, 182);
+    color: white;
+}
+form button {
     color: white;
     padding: 5px;
     border: none;
     border-radius: 5px;
     font-family: 'Josefin Sans', sans-serif;
     font-size: 15px;
-    background: radial-gradient(circle, rgba(121,124,213,1) 32%, rgba(105,219,223,1) 100%);
+    background: radial-gradient(circle, rgba(121, 124, 213, 1) 32%, rgba(105, 219, 223, 1) 100%);
 }
-form button:hover{
+form button:hover {
     color: white;
     padding: 5px;
     border: none;
@@ -55,12 +81,12 @@ form button:hover{
     background: radial-gradient(circle, rgb(65, 67, 114) 32%, rgb(71, 145, 148) 100%);
     box-shadow: 0 0 10px white;
 }
-form button:active{
+form button:active {
     color: white;
     padding: 5px;
     border: none;
     border-radius: 5px;
     font-family: 'Josefin Sans', sans-serif;
     font-size: 15px;
-    background: radial-gradient(circle, rgb(69, 114, 65) 32%, rgb(102, 148, 71) 100%); 
+    background: radial-gradient(circle, rgb(69, 114, 65) 32%, rgb(102, 148, 71) 100%);
 }

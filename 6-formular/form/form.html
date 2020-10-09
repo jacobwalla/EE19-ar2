@@ -4,17 +4,48 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Enkelt Formulär</title>
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Nova+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital@1&family=Josefin+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <form action="">
         <label for="fnamn">Förnamn</label>
-        <input id="fnamn" type="text">
+        <input id="fnamn" type="text" placeholder="T.ex Abdi Mohammed">
         <label for="enamn">Efternamn</label>
-        <input id="enamn" type="text">
+        <input id="enamn" type="text" placeholder="T.ex Gogogodoo">
         <label for="epost">E-Post</label>
-        <input id="epost" type="email">
+        <input id="epost" type="email" placeholder="T.ex abdi.mohammed@yahoo.com">
+        <label for="kön">Kön</label>
+        <div>
+            <input type="radio" name="kön">Kille 
+            <input type="radio" name="kön">Tjej 
+            <input type="radio" name="kön" checked>Traktor
+            <input type="radio" name="kön">Vill inte säga
+        </div>
+        <label for="allergi">Allergi</label>
+        <div>
+            <input type="checkbox" name="allergi">Gluten
+            <input type="checkbox" name="allergi">Laktos
+            <input type="checkbox" name="allergi">Nötter
+            <input type="checkbox" name="allergi">Coochie
+        </div>
+        <label for="Hemland">Hemland</label>
+        <select name="Hemland">
+            <option value="0">Välj ett land</option>    
+            <option value="1">Israel</option>    
+            <option value="2">Nigeria</option>
+            <option value="3">Svergie</option>
+            <option value="4">Amerika</option>
+            <option value="5">Ryssland</option>
+            <option value="6">Sydafrika</option>
+            <option value="7">Elfbenskusten</option>
+            <option value="8">Afghanistan(rapist)</option>
+            <option value="9">Syrien</option>
+            <option value="10">Annat</option>
+        </select>
+
+        <label>Kommentar</label>
+        <textarea cols="30" rows="10" placeholder="Lägg till någon kommentar"></textarea>
         <button>Skicka</button>
     </form>
 </body>
