@@ -1,0 +1,72 @@
+/* Enkel CSS-reset */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body, h1, h2, h3, h4, h5, h6, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+
+.sidhuvud{
+
+}
+.sidhuvud img{
+
+}
+.sidhuvud ul{
+
+}
+.sidhuvud li{
+
+}
+.sidhuvud li a{
+    
+}
+.sidhuvud li a:hover{
+
+}
+/* FÄRGER */
+/* MÖRK #EFDAC5 */
+/* LJUS #FEF1E5 */
+.rutor{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+.ljus{
+    background: #FEF1E5;
+}
+.mörk{
+    background: #EFDAC5;
+}
+.rutor .burgare{
+    
+}
+.rutor .burgare h1{
+    font-family: 'Passion One', cursive;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 50px;
+}
+.rutor .burgare h2{
+    font-family: 'Kalam', cursive;
+    text-align: center;
+    font-size: 50px;
+}
+.rutor .burgare img{
+    width: 100%;
+    transition: all 0.5s;
+}
+.rutor .burgare img:hover{
+    width: 105%;
+}
+.rutor .burgare p{
+    font-family: 'Passion One', cursive;
+    text-align: center;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
