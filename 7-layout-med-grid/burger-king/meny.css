@@ -12,26 +12,38 @@ body, h1, h2, h3, h4, h5, h6, p, ul {
 
 
 .sidhuvud{
-
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
 }
 .sidhuvud img{
-
+    width: 80px;
 }
 .sidhuvud ul{
-
+    list-style-type: none;
+    margin: 30px;
 }
 .sidhuvud li{
-
+    display: inline;
+    font-family: 'Passion One', cursive;
+    font-size: 25px;
+    text-transform: uppercase;
+    padding: 15px;
 }
 .sidhuvud li a{
-    
+    text-decoration: none;
+    color: #682F1C;
 }
 .sidhuvud li a:hover{
-
+    color: #AD8B7C;
+}
+.sidhuvud li a.aktiv{
+    color: #F7A600;
 }
 /* FÄRGER */
 /* MÖRK #EFDAC5 */
 /* LJUS #FEF1E5 */
+/* TEXT #682F1C */
 .rutor{
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
@@ -43,30 +55,31 @@ body, h1, h2, h3, h4, h5, h6, p, ul {
     background: #EFDAC5;
 }
 .rutor .burgare{
-    
+    color: #682F1C;
+    text-align: center;
 }
 .rutor .burgare h1{
     font-family: 'Passion One', cursive;
-    text-align: center;
     text-transform: uppercase;
-    font-size: 50px;
+    font-size: 45px;
+    margin-top: 105px;
 }
 .rutor .burgare h2{
-    font-family: 'Kalam', cursive;
-    text-align: center;
-    font-size: 50px;
+    font-family: 'Nothing You Could Do', cursive;
+    font-size: 30px;
+    color: #7a3620de;
 }
 .rutor .burgare img{
-    width: 100%;
+    width: 80%;
     transition: all 0.5s;
 }
 .rutor .burgare img:hover{
-    width: 105%;
+    transform: scale(1.2);
 }
 .rutor .burgare p{
     font-family: 'Passion One', cursive;
-    text-align: center;
-    font-size: 30px;
+    font-size: 20px;
     text-transform: uppercase;
+    margin-bottom: 18px;
 }
 
