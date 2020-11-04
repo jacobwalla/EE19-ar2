@@ -17,7 +17,7 @@ body{
     margin: 100px auto;
     background: #F9F8F1;   
     width: 900px;
-    padding: 30px;
+    padding: 20px;
     text-align: center;
 }
 .kontainer img{
@@ -25,11 +25,12 @@ body{
 }
 .kontainer h1{
     font-family: 'Patua One', cursive;
-    font-size: 30px;
+    font-size: 45px;
+    margin-bottom: 20px;
 }
 .kontainer p{
     font-family: 'Roboto Slab', serif;
-    font-size: 12px;
+    font-size: 13px;
     margin-bottom: 50px;
 }
 .grid{
@@ -43,8 +44,8 @@ body{
     text-align: center;
 }
 .grid .produkt img{
-    width: 70%;
-    border: 5px solid white;
+    width: 100%;
+    border: 20px solid white;
 }
 .grid .produkt p{
     font-family: 'Roboto Slab', serif;
