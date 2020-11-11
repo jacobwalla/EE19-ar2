@@ -10,47 +10,53 @@ body, h1, h2, h3, h4, h5, h6, p, ul {
     padding: 0;
 }
 
-body{
+body {
     background: url(./bilder/annie-spratt-7CME6Wlgrdk-unsplash.jpg);
 }
-.kontainer{
+.kontainer {
     width: 800px;
     margin: auto;
 }
-.sidhuvud{
+/* Sidhuvudets Utseende */
+.sidhuvud {
     margin-left: 75px;
     display: grid;
     grid-template-columns: auto auto;
 }
-.sidhuvud ul{
+.sidhuvud ul {
     list-style-type: none;
     margin: 30px;
 }
-.sidhuvud li{
+.sidhuvud li {
     display: inline;
     font-family: 'Passion One', cursive;
     font-size: 35px;
     text-transform: uppercase;
     padding: 15px;
 }
-.sidhuvud li a{
+.sidhuvud li a {
     font-family: 'Henny Penny', cursive;
     text-decoration: none;
     color: #163369;
     transition: all 0.7s;
 }
-.sidhuvud li a:hover{
+.sidhuvud li a:hover {
     color: #0e182c;
     font-size: 36px;
-    text-shadow: 0px 0px 10px #ff8800;
+    text-shadow: 0px 0px 10px #ad069f;
 }
-.galleri{
+.sidhuvud .aktiv {
+    color: #000000;
+    font-size: 36px;
+    text-shadow: 0px 0px 10px #ad069f;
+}
+.galleri {
     background: #26274275;
     border-radius: 10px;
     padding: 40px;
-    box-shadow: 0px 0px 1000px #d1ae7a;
+    box-shadow: 0px 0px 500px #9000a3;
 }
-.litenrubrik{
+.litenrubrik {
     font-family: 'Acme', sans-serif;
     font-size: 30px;
     text-align: center;
@@ -58,104 +64,100 @@ body{
     color: #163369;
     text-shadow: 2px 2px 5px #ffffff;
 }
-.bilder{
+.bilder {
     display: grid;
     gap: 30px;
     grid-template-columns: auto auto;
     grid-template-rows: auto auto;
 }
-.bilder img{
+.bilder img {
     width: 100%;
     border-radius: 15px;
-    transition: all 1s;
+    transition: ease-out all 1s;
 }
-.bilder img:hover{
-    transform: scale(1.2);
+.bilder img:hover {
+    transform: scale(1.1);
     box-shadow: 0px 0px 100px #ffffff;
 }
-.historia{
+.historia {
     background: #26274275;
     border-radius: 10px;
     padding: 40px;
-    box-shadow: 0px 0px 1000px #000000;
+    box-shadow: 0px 0px 500px #000000;
 }
-.historia p{
+.historia p {
     font-family: 'Acme', sans-serif;
     color: #163369;
     font-size: 20px;
     margin-bottom: 30px;
 }
-.historia a{
+.historia a {
     text-decoration: none;
     color: #684511;
     transition: all 0.5s;
 }
-.historia a:hover{
+.historia a:hover {
     text-decoration: none;
     color: #fd9800;
 }
-.filmer{
+.filmer {
     background: #26274275;
     border-radius: 10px;
     padding: 40px;
-    box-shadow: 0px 0px 1000px #663375;
+    box-shadow: 0px 0px 500px #6e84ff;
 }
-.bildotext{
+.bildotext {
     display: grid;
     grid-template-columns: auto auto;
     gap: 30px;
     padding: 20px;
 }
-.bildotext img{
+.bildotext img {
     width: 100%;
     height: 400px;
 }
-.bildotext h2{
+.bildotext h2 {
     font-family: 'Acme', sans-serif;
     font-size: 25px;
     text-align: center;
     margin-bottom: 30px;
     color: #163369;
 }
-.förstafilm p{
+.förstafilm p {
     height: 300px;
     font-family: 'Acme', sans-serif;
     font-size: 20px;
     margin-bottom: 30px;
     color: #021a46;
-    border: 2px solid #021a46;
-    border-radius: 10px;
     padding: 10px;
 }
-.andrafilm p{
+.andrafilm p {
     height: 300px;
     font-family: 'Acme', sans-serif;
     font-size: 20px;
     margin-bottom: 30px;
     color: #021a46;
-    border: 2px solid #021a46;
-    border-radius: 10px;
     padding: 10px;
-    
+
 }
-table{
+table {
     width: 700px;
     margin: auto;
 }
-th{
+th {
     font-family: 'Acme', sans-serif;
-    color: #4364a1;
+    color: #6e84ff;
     background: #021a46;
     padding: 15px;
     border-radius: 5px;
 }
-td{
+td {
     font-family: 'Acme', sans-serif;
     font-size: 20px;
     color: #021a46;
     text-align: center;
     background: rgba(255, 255, 255, 0);
-    padding: 20px;
-    border: 2px solid #021a46;
-    border-radius: 5px;
+    padding: 10px;
+    border: 5px solid #021a46;
+    border-radius: 10px;
 }
