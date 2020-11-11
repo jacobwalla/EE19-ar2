@@ -71,10 +71,10 @@ body, h1, h2, h3, h4, h5, h6, p, ul {
 }
 .rutor .burgare img{
     width: 80%;
-    transition: all 0.5s;
+    transition: all 1s;
 }
 .rutor .burgare img:hover{
-    transform: scale(1.2);
+    transform: scale(1.3);
 }
 .rutor .burgare p{
     font-family: 'Passion One', cursive;
