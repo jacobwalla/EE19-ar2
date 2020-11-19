@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Uppgift 2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="kontainer">
+        <h1>Lyssna på klick</h1>
+        <button onclick="angenamn()">Ange namn</button>
+        <button onclick="angeadress()">Ange adress</button>
+
+        <script>
+            var namn, adress;
+            function angenamn() {
+            namn = prompt("Vad heter du?");
+            }
+            function angeadress() {
+                adress = prompt("Vart bor du?");
+                alert("Hej, " + namn + " du bor på " + adress);
+            }
+        </script>
+    </div>
+</body>
+</html>
