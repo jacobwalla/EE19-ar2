@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Uppgift 5</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onclick="inmata()">
+    <div class="kontainer">
+        <h1>Uppgift 5</h1>
+    </div>
+    <script>
+        function inmata() {
+            var angeEpost = prompt("Ange Epost");
+            
+            var ändradEpost = angeEpost.replace("@", "(at)");
+
+            alert("Detta är din epost: " + ändradEpost);
+        }
+    </script>
+</body>
+</html>
