@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Uppgift 4</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="kontainer">
+        <h1>Tränar på DOM</h1>
+        <button onclick="förstaBild()">En Bakgrundsbild</button>
+        <button onclick="andraBild()">En Till Bakgrundsbild</button>
+        <button onclick="tredjeBild()">Ännu Till Bakgrundsbild</button>
+    </div>
+    <script>
+        function förstaBild() {
+            document.body.innerHTML = "<img src=\"./bilder/greg-rakozy-oMpAz-DN-9I-unsplash.jpg\" alt=\"coolbild\">";
+        }
+        function andraBild() {
+            document.body.innerHTML = "<img src=\"./bilder/josh-rakower-zBsXaPEBSeI-unsplash.jpg\" alt=\"coolbild\">";
+        }
+        function tredjeBild() {
+            document.body.innerHTML = "<img src=\"./bilder/simon-berger-twukN12EN7c-unsplash.jpg\" alt=\"coolbild\">";
+        }
+    </script>
+</body>
+</html>

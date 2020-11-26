@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Uppgift 5</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="kontainer">
+        <h1>Tränar på DOM</h1>
+        <button onclick="ytKlipp()">Ett YouTube Klipp</button>
+    </div>
+    <script>
+        function ytKlipp() {
+            document.body.innerHTML = "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/Qgww5rj8OmA\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>"
+        }
+    </script>
+</body>
+</html>
