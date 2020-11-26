@@ -9,9 +9,16 @@
 <body>
     <div class="kontainer">
         <h1>Tränar på DOM</h1>
+        <button onclick="förstaKnapp()">Ny knapp</button>
     </div>
     <script>
-        
+        function förstaKnapp() {
+            document.body.innerHTML = "<button onclick=\"andraKnapp()\">Ändra hemsidan</button>"
+        }
+        function andraKnapp() {
+            document.body.style.cssText = "background: darkgrey;"
+            document.body.style.cssText = "color: white;"
+        }
     </script>
 </body>
 </html>
