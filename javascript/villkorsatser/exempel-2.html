@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="kontainer">
+        <h1>Får du köpa alkohol</h1>
+        <button onclick="alkotest()">Ange ålder</button>
+    </div>
+
+    <script>
+        function alkotest() {
+            var ålder = prompt("Ange ålder");
+
+            // Om ålder >= 20 då ....
+            // Annars skicka till hink.sthlm instagram
+
+            if (ålder >= 20) {
+                document.body.style.cssText = "background: lightgreen;"
+                alert("Du får köpa alkohol!");
+                window.location.href = "https://www.systembolaget.se/"
+                
+            } else {
+                document.body.style.cssText = "background: red;"
+                alert("Du få inte köpa alkohol lagligt!");
+                window.location.href = "https://www.instagram.com/hink_sthlm00/"
+            }
+        }
+    </script>
+</body>
+</html>

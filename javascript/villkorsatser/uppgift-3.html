@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="kontainer">
+        <h1>Uppgift 3</h1>
+        <button onclick="ålder()">Ange ålder</button>
+    </div>
+
+    <script>
+        function ålder() {
+            var angeålder = prompt("Hur gammal är du?");
+
+            if (angeålder > 65 || (angeålder >= 12 && angeålder <= 18)) {
+                alert("Du får billigt kaffe!");
+            } else {
+                alert("Du får inte billigt kaffe!");
+            }
+        }
+    </script>
+</body>
+</html>

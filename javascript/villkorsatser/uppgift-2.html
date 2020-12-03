@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="kontainer">
+        <h1>Uppgift 2</h1>
+        <button onclick="längd()">Ange längd</button>
+    </div>
+
+    <script>
+        function längd() {
+            var angelängd = prompt("Hur lång är du?");
+
+            if (angelängd > 1.4 && angelängd < 1.9) {
+                alert("Du får åka!");
+            } else {
+                alert("Du får inte åka!");
+            }
+        }
+    </script>
+</body>
+</html>

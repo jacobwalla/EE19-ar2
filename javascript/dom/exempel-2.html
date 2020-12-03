@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Exempel 2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="kontainer">
+        <h1>Ändra bakgrundsfärger</h1>
+        <button onclick="ändraBg()">Ändra bakgrund</button>
+    </div>
+
+    <script>
+        function ändraBg() {
+            var färg = prompt("Ange en färg")
+            document.body.style.cssText = "background: " + färg;
+        }
+    </script>
+</body>
+</html>

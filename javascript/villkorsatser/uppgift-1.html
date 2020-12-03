@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="kontainer">
+        <h1>Uppgift 1</h1>
+        <button onclick="inlog()">Ange lösenord</button>
+    </div>
+
+    <script>
+        function inlog() {
+            var lösenord = prompt("Ange lösenord");
+
+            // Om lösenordet är rätt svara "Rätt!"
+
+            if (lösenord == "Dunder1234") {
+                document.body.style.cssText = "background: lightgreen;"
+                alert("Inloggad!");
+                
+            } else {
+                document.body.style.cssText = "background: red;"
+                alert("Fel lösenord!");
+                window.location.href = "https://www.youtube.com/watch?v=YddwkMJG1Jo&ab_channel=Rickroll%2Cbutwithadifferentlink"
+            }
+        }
+    </script>
+</body>
+</html>
