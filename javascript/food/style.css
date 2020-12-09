@@ -1,0 +1,260 @@
+/* Enkel CSS-reset */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body, h1, h2, h3, h4, h5, h6, p, ul {
+    margin: 0;
+    padding: 0;
+}
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Chettan+2:wght@500&family=Poppins:wght@300&display=swap');
+
+/* Custom Properties */
+
+:root {
+    --leading: 2em
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+.kontainer {
+    background: #503099 url(./bilder/bg.jpg);
+    background-position: 12% 83%;
+    color: white;
+    text-align: center;
+    padding-bottom: 4em;
+}
+header {
+    padding: 1em 0;
+}
+.kontainer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+section {
+    margin: 0 1em;
+}
+h1 {
+    font-size: 2.5rem;
+    margin: 2em 0 1.2em;
+}
+h1 span {
+    text-transform: uppercase;
+    display: block;
+    font-size: 1.5rem;
+    position: relative;
+    z-index: 1;
+}
+h1 span::before {
+    content: " ";
+    position: absolute;
+    width: 3em;
+    background: #b484f1;
+    height: .4em;
+    bottom: 0;
+    z-index: -1;
+    margin-left: -.3em;
+}
+.kontainer p {
+    font-weight: bold;
+    margin: 0 1em 3em;
+}
+.formkontainer {
+    background: white;
+    margin: 2em -1em 0;
+    padding: 2em;
+    border-radius: 2em;
+}
+label {
+    color: #522d98;
+    font-weight: bold;
+    display: block;
+    margin: 1em;
+    font-size: 1.2em;
+}
+input[type=text] {
+    border: 1px solid #8b8b8b;
+    width: 100%;
+    padding: 1em;
+    box-sizing: border-box;
+    border-radius: 2em;
+    margin-top: 1.2em;
+}
+.formkontainer p {
+    color: gray;
+    margin-bottom: 1.5em;
+    font-weight: normal;
+    font-size: .9em;
+    margin-top: .3em;
+}
+input[type=button] {
+    background: #4d8bff;
+    border: none;
+    width: 100%;
+    color: white;
+    font-weight: bold;
+    padding: 1em 0;
+    border-radius: 2em;
+    font-size: 1.3em;
+    cursor: pointer;
+    transition: all 1s;
+}
+input[type=button]:hover {
+    background: #274a8a;
+}
+.bottom {
+    margin: 0;
+}
+.rightcol {
+    text-align: center;
+    margin: 3em 1em;
+}
+h2 {
+    text-transform: uppercase;
+    position: relative;
+
+}
+h2::before {
+    content: " ";
+    position: absolute;
+    width: 8em;
+    background: #b484f1;
+    height: .4em;
+    bottom: 0;
+    z-index: -1;
+    margin-left: -.3em;
+}
+img {
+    width: 100%;
+}
+p {
+    line-height: var(--leading);
+}
+
+.overlay {
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    z-index: 1;
+    place-content: center;
+    color: white;
+    display: grid;
+    font-size: 2em;
+    display: none;
+    opacity: 0;
+}
+
+.animate-overlay {
+        animation: overlay 3s forwards;
+}
+
+@media (min-width: 430px) {
+
+    section { 
+        margin: 0 4em;
+    }
+    .formkontainer {
+        margin: 2em -4em 0;
+    }
+
+}
+@media (min-width: 930px) {
+
+    .kontainer {
+        text-align: left;
+    }
+    .kontainer p{
+        font-weight: bold;
+        margin: 0 0 3em;
+    }
+    .kontainer section{ 
+        width: 65%;
+    }
+
+    .formkontainer {
+        margin: 2em 0 0;
+        padding: 2em;
+        border-radius: 2em;
+        box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    form {
+        display: flex;
+    }
+    .formleft {
+        width: 70%;
+    }
+    label {
+        margin: 0;
+    }
+    input[type="button"] {
+        height: fit-content;
+        font-size: 1.1em;
+        margin-left: 1em;
+        margin-top: 2.2em;
+        padding: .7em 0;
+        width: 30%;
+    }
+    .kontainer p{
+        margin-bottom: 0;
+    }
+
+    .bottom {
+        display: grid;
+        grid-template-columns: repeat(2, 50% );
+        grid-template-areas: 
+            "bowl content";   
+    }
+
+    .rightcol {
+        grid-area: content;
+        padding: 0 10%;
+        text-align: left;
+        align-self: center;
+    }
+
+    img{
+        grid-area: bowl;
+    }
+
+    h2 {
+        margin-bottom: 1em;
+    }
+}
+
+.top {
+    animation: fadeIn 2s forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-2em);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0 );
+    }
+}
+
+@keyframes overlay {
+    0% {
+        opacity: 0;
+    }
+    30% {
+        opacity: 1;
+    }
+    70% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
