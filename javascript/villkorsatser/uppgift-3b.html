@@ -8,14 +8,24 @@
 </head>
 <body>
     <div class="kontainer">
-        <h1>Uppgift 3</h1>
+        <h1>Uppgift 3b</h1>
     </div>
     <script>
         var ålder = prompt("Hur gammal är du?");
-        if (ålder == 11) {
+        if (ålder >= 11) {
             alert("Du får se vissa filmer på bio utan vuxet sällskap");
-        }   else if (ålder == 13) {
-            alert("Du får utföra lättare arbete")
+
+            if (ålder >= 13) {
+                alert("Du får utföra lättare arbete");
+
+                if (ålder == 15) {
+                    alert("Du få köra moped");
+
+                    if (ålder == 16) {
+                        alert("Du få övningsköra bil");
+                    }
+                }
+            }
         }
     </script>
 </body>

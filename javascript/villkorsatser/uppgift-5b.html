@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Nya uppgifter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="kontainer">
+        <h1>Uppgift 5b</h1>
+    </div>
+    <script>
+        // Vilken svensk högtid?
+        var fråga1 = prompt("Äter man sill? (j/n)");
+        if (fråga1 == "ja") {
+            var svar1 = prompt("Dricker man must? (j/n)");
+            if (svar1 == "ja") {
+                var svar2 = prompt("Kollar man tv kl 15:00? (j/n)");
+                if (svar2 == "ja") {
+                    alert("Det är jul!");
+                } else {
+                    alert("Det är påsk!");
+                }
+            } else {
+                alert("Det är midsommar!");
+            }
+        } else {
+            var svar4 = prompt("Är fika viktigt? (j/n)");
+            if (svar4 == "ja") {
+                var svar5 = prompt("Vispgrädde? (j/n)");
+                if (svar5 == "ja") {
+                    var svar6 = prompt("Är det sylt till? (j/n)");
+                    if (svar6 == "ja") {
+                        alert("Det är våffeldagen!");
+                    } else {
+                        alert("Det är fettisdagen!");
+                    }
+                } else {
+                    alert("Det är kanelbulledagen!");
+                }
+            } else {
+                var svar7 = prompt("Är det importerat från USA av köpmän? j/n");
+                if (svar7 == "ja") {
+                    var svar8 = prompt("Vad köper man? (rosor/pumpor)");
+                    if (svar8 == "rosor") {
+                        alert("Det är alla hjärtansdag!");
+                    } else {
+                        alert("Det är halloween!");
+                    }
+                } else {
+                    var svar9 = prompt("Är man bakfull? (j/n)");
+                    if (svar9 == "ja") {
+                        var svar10 = prompt("Kollar man på Ivanhoe? (j/n)");
+                        if (svar10 == "ja") {
+                            alert("Det är nyårsdagen!");
+                        } else {
+                            alert("Det är första maj!");
+                        }
+                    } else {
+                        var svar10 =prompt("Vet folk orsaken till firandet?");
+                        if (svar10 == "ja") {
+                            alert("Det är kristihimmelsfärd!");
+                        } else {
+                            alert("Det är nationaldagen!");
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</body>
+</html>
