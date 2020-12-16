@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Interaktiv Berättelse</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="kontainer">
+        <h1>Interaktiv Berättelse</h1>
+    </div>
+
+    <script>
+        // En variabel som frågar vad den som spelar vill göra
+        var fråga = prompt("🏦Du rånade precis en bank! Vill du ta bilen är springa till fots? bilen/springa?");
+        // Om den som spelar väljer bil händer det här 
+        if (fråga.toLowerCase() == "bilen") {
+            // En variabel som frågar vad den som spelar vill göra
+            var svar = prompt("🚗Du kan åka in på ett motel eller köra vidare vad väljer du? Vill du åka till motellet eller köra vidare? motellet/köra vidare?");
+            // Om den som spelar väljer motellet händer det här
+            if (svar.toLowerCase() == "motellet") {
+                // Den som spelar kom till ett av sluten
+                alert("Du åkte till motellet och väntade i en vecka.");
+                alert("💯Du kom undan!💯");
+                document.body.innerHTML = "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/7lsdJDiJ0QE\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>"
+                // Om den som spelar inte väljer motellet
+            } else {
+                // Den som spelar kom till ett annat slut
+                alert("👮Du kör vidare men polisen hinner ikapp.");
+                alert("⛓️Du blev tagen!👮");
+            }
+            // Om den som spelar inte väljer bilen
+        } else {
+            // En variabel som frågar vad den som spelar vill göra
+            var svar3 = prompt("🏃‍♂️Du springer och måste göra ett snabbt beslut! höger/vänster?");
+            // Om den som spelar väljer höger händer det här
+            if (svar3.toLowerCase == "höger") {
+                // En variabel som frågar vad den som spelar vill göra
+                var svar4 = prompt("Du ser en klädaffär. Vill du gå in eller inte? gå in/fortsätt?");
+                // Om den som spelar väljer att gå in händer det här
+                if (svar4.toLowerCase == "gå in") {
+                    // Den som spelar kom till ett annat slut
+                    alert("👕Du byter kläder sätter på dig en keps och glasögon.")
+                    alert("💯Du kom undan!💯");
+                    document.body.innerHTML = "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/7lsdJDiJ0QE?autoplay=1&mute=1&controls=0\"</iframe>"
+                    // Om den som spelar inte väljer höger
+                } else {
+                    // Den som spelar kom till ett annat slut
+                    alert("👮Du springer vidare men polisen hinner ikapp.");
+                    alert("⛓️Du blev tagen!👮");
+                }
+                // Om den som spelar inte väljer att gå in 
+            } else {
+                // Den som spelar kom till ett annat slut
+                alert("Du sprang in i en gränd.");
+                alert("⛓️Du blev tagen!👮");
+            }
+        }
+    </script>
+</body>
+</html>
