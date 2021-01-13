@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Slutbetyg</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="kontainer">
+        <h1>Slutbetyg</h1>
+        <button onclick="slutbetyg()">Gissa slutbetyg</button><br>
+        <input disabled type="text">
+    </div>
+    <script>
+        // Grabba tag i inputrutan
+        const elementInput = document.querySelector("input");
+
+        function slutbetyg() {
+            var slumptal = Math.floor(Math.random() * 10);       // 0,1,2,3,4,5
+
+            // Skriv ut i input-rutan
+            // elementInput.value = "Slumptalet = " + slumptal;
+
+            /*          switch (slumptal) {
+                         case 1 || 2 || 3 || 4:
+                             elementInput.value = "Du får slutbetyg E 👍";
+                             break;
+                         case 5 || 6:
+                             elementInput.value = "Du får slutbetyg D 😎";
+                             break;
+                         case 7:
+                             elementInput.value = "Du får slutbetyg C 😀";
+                             break;
+                         case 8:
+                             elementInput.value = "Du får slutbetyg B 🤗";
+                             break;
+                         case 9:
+                             elementInput.value = "Du får slutbetyg A 🤓";
+                             break;
+         
+                         default:
+                             elementInput.value = "Du får slutbetyg F 🤣";
+                             break; 
+                        } */
+
+                        if (slumptal == 0 || slumptal == 1) {
+                        alert("Du får slutbetyg F 🤣");
+                    } else if (slumptal == 2) {
+                        alert("Du får slutbetyg E 👍");
+                    } else if (slumptal == 3) {
+                        alert("Du får slutbetyg D 😎");
+                    } else if (slumptal == 4) {
+                        alert("Du får slutbetyg C 😀");
+                    } else if (slumptal == 5) {
+                        alert("Du får slutbetyg B 🤗");
+                    } else if (slumptal == 6) {
+                        alert("Du får slutbetyg A 🤓");
+                    }
+        }
+    </script>
+</body>
+</html>
