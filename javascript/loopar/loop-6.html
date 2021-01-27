@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Loopa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="kontainer">
+        <h1>Loopa</h1>
+        <button onclick="loopa()">Loopa!</button>
+        <p></p>
+    </div>
+    <script>
+        const eResultat = document.querySelector("p");  // Valt ut <p></p>
+        const hResultat = document.querySelector("h1");
+        const dResultat = document.querySelector("button");
+
+        function loopa() {
+
+            var i = 50;
+
+            while (i< 0) {
+                eResultat.innerHTML += i;
+                i--;
+            }
+
+        }
+    </script>
+</body>
+</html>

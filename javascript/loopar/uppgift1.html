@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Folkrikaste Land</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="kontainer">
+        <h1>Vilket är Europas folkrikaste land?</h1>
+        <button onclick="land()">Är du redo?</button>
+    </div>
+    <script>
+        function land() {
+            while (true) {
+                var gissning = prompt("Vilket är Europas folkrikaste land?");
+                if (gissning == "Ryssland" || gissning == "ryssland") {
+                    alert("Rätt!");
+                    break;
+                } else {
+                    alert("Fel, försök igen!");
+                }
+            }
+        }
+    </script>
+</body>
+</html>
