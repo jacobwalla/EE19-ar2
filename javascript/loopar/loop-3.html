@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Spel-Loop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="kontainer">
+        <h1>Gissa ett tal</h1>
+        <button onclick="loopa()">Är du redo?</button>
+    </div>
+    <script>
+        function loopa() {
+            var slumptal = Math.ceil(Math.random() * 50);
+            console.log(slumptal);
+
+            // Antal varv
+            var varv = 0;
+
+            while (varv < 6) {
+
+                // Användaren gissar
+                var gissning = prompt("Gissa ett tal");
+
+                // Testa om rätt svar
+                if (gissning == slumptal) {
+                    alert("Rätt!");
+                    break;
+                } else {
+                    alert("Försök igen");
+                }
+
+                varv++; // Öka med 1 
+                console.log("varv", varv);
+            }
+        }
+    </script>
+</body>
+</html>

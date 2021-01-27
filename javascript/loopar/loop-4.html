@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Spel-Loop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="kontainer">
+        <h1>Gissa ett tal</h1>
+        <button onclick="loopa()">Är du redo?</button>
+    </div>
+    <script>
+        function loopa() {
+            var varv = 5;
+
+            while (varv < 15) {
+                console.log("varv", varv);
+                varv++;
+            }
+        }
+    </script>
+</body>
+</html>

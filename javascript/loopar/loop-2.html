@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Spel-Loop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="kontainer">
+        <h1>Gissa ett tal</h1>
+        <button onclick="loopa()">Är du redo?</button>
+    </div>
+    <script>
+        function loopa() {
+            var slumptal = "42";
+
+            while (true) {
+                
+                // Användaren gissar
+                var gissning = prompt("Vad är meningen med livet?");
+
+                // Testa om rätt svar
+                if (gissning == slumptal) {
+                    alert("Rätt!");
+                    break;
+                } else {
+                    alert("Försök igen");
+                }
+            }
+        }
+    </script>
+</body>
+</html>
