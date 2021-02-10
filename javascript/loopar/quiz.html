@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="kontainer">
+        <h1>Quiz</h1>
+        <p>Gissa rätt svar på 5 frågor!</p>
+        <button onclick="quiz()">STARTA QUIZEN!</button>
+    </div>
+    <script>
+        function quiz() {
+            var varv = 0
+            var poäng = 0
+
+            while (varv < 5) {
+
+                var slumptal = Math.ceil(Math.random() * 5);
+
+                if (slumptal == 1) {
+                    var gissning = prompt("Vad betyder para?\n (1=pengar, 2=mat, 3=bil)");
+
+                    if (gissning == "1" || "okej") {
+                        poäng++;
+
+                    }
+                }
+                if (slumptal == 2) {
+                    var gissning = prompt("Vad är en aaraba?\n (1=tåg, 2=hus, 3=bil)");
+
+                    if (gissning == "3" || "bil") {
+                        poäng++;
+
+                    }
+                }
+                if (slumptal == 3) {
+                    var gissning = prompt("Vad betyder shalom?\n (1=nej, 2=hej, 3=okej)");
+
+                    if (gissning == "2" || "hej") {
+                        poäng++;
+
+                    }
+                }
+                if (slumptal == 4) {
+                    var gissning = prompt("Vad är aina?\n (1=dumma, 2=snea, 3=snälla)");
+
+                    if (gissning == "2" || "snea") {
+                        poäng++;
+
+                    }
+                }
+                if (slumptal == 5) {
+                    var gissning = prompt("Är Jacob skitzad?\n (1=nej, 2=ja)");
+
+                    if (gissning == "2" || "ja") {
+                        poäng++;
+
+                    } else {
+                        poäng -= 5;
+
+                    }
+                }
+                varv++;
+            }
+            alert("Du fick " + poäng + " poäng");
+        }
+    </script>
+</body>
+</html>

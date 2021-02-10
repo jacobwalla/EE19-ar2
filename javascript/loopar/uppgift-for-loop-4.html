@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>For-loop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="kontainer">
+        <h1>For-loop</h1>
+        <button onclick="fråga()">Klicka</button>
+    </div>
+
+    <script>
+
+        function fråga() {
+            var heltal = prompt("Skriv ett heltal");
+            var heltal2 = prompt("Skriv ett störreheltal");
+
+            for (var i = heltal; i <= heltal2; i += 10) {
+                console.log(i);
+            }
+
+        }
+    </script>
+</body>
+</html>
