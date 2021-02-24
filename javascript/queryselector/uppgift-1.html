@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hemligt nummer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="kontainer">
+        <h1>Hemligt nummer</h1>
+
+        <h2>Input</h2>
+        <label>Vad är 99 - 33? <input type="text"></label>
+
+        <button onclick="gissa()">Visa hemligt nummer</button>
+
+        <h2>Output</h2>
+        <label>Svar <input type="text"></label>
+    </div>
+    <script>
+        const eRutaGissning = document.querySelector(".gissing");
+        const eRutaSvar = document.querySelector(".svar");
+
+        function gissa() {
+            var gissning = eRutaGissning.value;
+
+            if (gissning == "66") {
+                eRutaSvar.value = "07680225007";
+            } else {
+                eRutaSvar.value = "Du är en robot!";
+            }
+        }
+    </script>
+</body>
+</html>
