@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Variabler och funktioner</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="rep.css">
+</head>
+<body>
+    <div class="kontainer">
+        <h1>Personuppgifter</h1>
+        <label>Förnamn <input class="fnamn" type="text"></label>
+        <label>Efternamn <input class="enamn" type="text"></label>
+        <label>Epost <input class="epost" type="text"></label>
+
+        <button onclick="">Skicka</button>
+
+        <label>Svar <textarea></textarea></label>
+    </div>
+    <script>
+
+        const rutaFnamn = document.querySelector(".fnamn");
+        const rutaEnamn = document.querySelector(".enamn");
+        const rutaEpost = document.querySelector(".epost");
+
+        const knapp = document.querySelector("button");
+
+        const rutaSvar = document.querySelector("textarea");
+
+        knapp.addEventListener("click", function () {
+            
+            var förnamn = rutaFnamn.value;
+            var efternamn = rutaEnamn.value;
+            var epost = rutaEpost.value;
+           
+            rutaSvar.value = "Hej " + förnamn + " " + efternamn + " din epost är " + epost;
+
+        })
+    </script>
+</body>
