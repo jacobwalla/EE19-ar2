@@ -14,9 +14,6 @@
         <label>Användarnamn <input type="text" class="anamn"></label>
         <label>Lösenord <input type="password" class="lösen"></label>
         <button class="btn btn-warning">Kontrollera lösenordet</button>
-        <button class="btn btn-info">Demo</button>
-        <button class="btn btn-primary">Logga in</button>
-        <button class="btn btn-danger">Töm rutorna</button>
         <label>Svar <textarea></textarea></label>
     </div>
     <script>
@@ -30,8 +27,8 @@
         const knappTöm = document.querySelector(".btn-danger");
         const rutaSvar = document.querySelector("textarea");
 
-        // Kod som körs när användaren klickar på knappen Logga in
-        knappLoggaIn.addEventListener("click", function () {
+        // Kod som körs när användaren klickar på knappen Kontrollera lösenordet
+        knappKontroll.addEventListener("click", function () {
             // Läs av användarnamnet och lagra i en lokal variabel
             var anamn = rutaAnamn.value;
             // Läs av lösenordet och lagra i en lokal variabel
@@ -40,12 +37,21 @@
             console.log(anamn);
             // Skriv ut lösenordet i loggen
             console.log(lösen);
-            // Är användarnamn (valfritt) och lösenord (valfritt) ifyllda
-            // Skriv "Välkommen ... du är inloggad" i rutaSvar
-            if (anamn == "admin" && lösen == "1234") {
-                rutaSvar.value = "Välkomen " + anamn + " du är inloggad";
+            // Är användarnamnet tomt
+            // Skriv ut en varning i rutaSvar
+            if (anamn == "") {
+                rutaSvar.value = "VARNING!";
+            }
+            // Är lösenordet "123" eller "1234" eller "12345"
+            // skriv ut en varning i rutaSvar,
+            // annars skriv ut "Bra lösenord!"
+            if (lösen == "123" || lösen == "1234" || lösen == "12345") {
+                rutaSvar.value = "VARNING!";
+            } else {
+                rutaSvar.value = "Bra lösenord!";
             }
         })
+
     </script>
 </body>
 </html>

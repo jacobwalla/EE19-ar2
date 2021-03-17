@@ -13,8 +13,6 @@
         <h1>Variabler och funktioner</h1>
         <label>Användarnamn <input type="text" class="anamn"></label>
         <label>Lösenord <input type="password" class="lösen"></label>
-        <button class="btn btn-warning">Kontrollera lösenordet</button>
-        <button class="btn btn-info">Demo</button>
         <button class="btn btn-primary">Logga in</button>
         <button class="btn btn-danger">Töm rutorna</button>
         <label>Svar <textarea></textarea></label>
@@ -40,11 +38,15 @@
             console.log(anamn);
             // Skriv ut lösenordet i loggen
             console.log(lösen);
-            // Är användarnamn (valfritt) och lösenord (valfritt) ifyllda
-            // Skriv "Välkommen ... du är inloggad" i rutaSvar
-            if (anamn == "admin" && lösen == "1234") {
-                rutaSvar.value = "Välkomen " + anamn + " du är inloggad";
-            }
+            // Skriv ut "Välkommen ... du är inloggad" i rutaSvar
+            rutaSvar.value = "Välkommen " + anamn + " du är inloggad";
+        })
+        // Kod som körs när användaren klickar på knappen Töm
+        knappTöm.addEventListener("click", function () {
+            // Töm alla rutor genom att skriva tomt "" i rutorna
+            rutaAnamn.value = "";
+            rutaLösen.value = "";
+            rutaSvar.value = "";
         })
     </script>
 </body>

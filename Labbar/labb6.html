@@ -14,9 +14,6 @@
         <label>Användarnamn <input type="text" class="anamn"></label>
         <label>Lösenord <input type="password" class="lösen"></label>
         <button class="btn btn-warning">Kontrollera lösenordet</button>
-        <button class="btn btn-info">Demo</button>
-        <button class="btn btn-primary">Logga in</button>
-        <button class="btn btn-danger">Töm rutorna</button>
         <label>Svar <textarea></textarea></label>
     </div>
     <script>
@@ -30,22 +27,28 @@
         const knappTöm = document.querySelector(".btn-danger");
         const rutaSvar = document.querySelector("textarea");
 
-        // Kod som körs när användaren klickar på knappen Logga in
-        knappLoggaIn.addEventListener("click", function () {
+        // Kod som körs när användaren klickar på knappen Kontrollera lösenordet
+
             // Läs av användarnamnet och lagra i en lokal variabel
-            var anamn = rutaAnamn.value;
-            // Läs av lösenordet och lagra i en lokal variabel
-            var lösen = rutaLösen.value;
-            // Skriv ut användarnamnet i loggen
-            console.log(anamn);
-            // Skriv ut lösenordet i loggen
-            console.log(lösen);
-            // Är användarnamn (valfritt) och lösenord (valfritt) ifyllda
-            // Skriv "Välkommen ... du är inloggad" i rutaSvar
-            if (anamn == "admin" && lösen == "1234") {
-                rutaSvar.value = "Välkomen " + anamn + " du är inloggad";
-            }
-        })
+
+            // Läs av lösenordet och lägg i en lokal variabel
+
+            // Räkna ut längden på användarnamnet och lagra i ny lokal variabel 
+            // längdAnamn
+            // Se https://devdocs.io/javascript/global_objects/string/length
+
+            // Skriv ut "Ditt användarnamn är ... och är ... långt" i rutaSvar
+
+            // Räkna ut längden på lösenordet och lägg i ny variabeln längdLösen
+
+            // Skriv ut "Ditt lösenord är ... och är ... långt" i rutaSvar (Skriv inte över raden om användarnamnet)
+
+            // Om Användarnamnet är längre än 5 tecken skriv ut en rad till:
+            // "Användarnamnet är minst 6 tecken långt"
+
+            // Om lösenordet är längre än 7 tecken skriv ut en rad till:
+            // "Användarnamnet är minst 8 tecken långt"
+
     </script>
 </body>
 </html>
