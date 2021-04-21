@@ -1,0 +1,17 @@
+body {
+    background: #a4d6ff;
+}
+canvas {
+    background: #fff;
+    margin: auto;
+    display: block;
+}
+.kontainer {
+    background: #c7c7c7;
+    width: 1000px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 1em;
+}
+

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hänga gubbe</title>
+    <link rel="stylesheet" href="canvas.css">
+</head>
+<body>
+    <canvas></canvas>
+    <script>
+        const rityta = document.querySelector("canvas");
+
+        rityta.width = 800;
+        rityta.height = 600;
+
+        var ctx = rityta.getContext("2d");
+
+        // ctx.strokeRect(100, 100, 200, 200);
+        // ctx.fillRect(500, 100, 200, 200);
+
+        ctx.beginPath();
+
+        //Marken
+        ctx.lineWidth = 10;
+        ctx.strokeStyle = "darkgrey";
+        ctx.moveTo(100, 500);
+        ctx.lineTo(700, 500);
+        ctx.stroke();
+
+        // Pålen
+        ctx.lineWidth = 5;
+        ctx.moveTo(200, 500);
+        ctx.lineTo(200, 100);
+        ctx.stroke();
+
+        // Balken
+        ctx.lineTo(600, 100);
+        ctx.stroke();
+
+        // Snaran
+        ctx.moveTo(500, 100);
+        ctx.lineTo(500, 200);
+        ctx.stroke();
+
+        // Gubben
+        ctx.moveTo(530, 230);
+        ctx.arc(500, 230, 30, 0, 2 * Math.PI);
+        ctx.stroke();
+        
+        // Kropp
+        ctx.moveTo(500, 260);
+        ctx.lineTo(500, 350);
+        ctx.stroke();
+        
+        // Benen
+        ctx.lineTo(530, 420);
+        ctx.stroke();
+
+        ctx.moveTo(500, 350);
+        ctx.lineTo(470, 420);
+        ctx.stroke();
+
+        // Armar
+        ctx.moveTo(500, 270);
+        ctx.lineTo(470, 330);
+        ctx.stroke();
+
+        ctx.moveTo(500, 270);
+        ctx.lineTo(530, 330);
+        ctx.stroke();
+
+        // Näsa
+        ctx.moveTo(520)
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Skriva text</title>
+    <link rel="stylesheet" href="canvas.css">
+</head>
+<body>
+    <div class="kontainer">
+        <div class="sidebar">
+            <h1>Canvas</h1>
+        </div>
+        <canvas></canvas>
+    </div>
+    <script defer>
+        // Hitta elementet
+        const rityta = document.querySelector("canvas");
+
+        // Ställer in storleken
+        rityta.width = 600;
+        rityta.height = 600;
+
+        // Slå på ritmotorn
+        var ctx = rityta.getContext("2d");
+
+        // Stilar 
+        ctx.fillStyle = "darkgreen";
+        ctx.fillRect(100, 100, 50, 50);
+
+        //Variabler
+        var x = 100;
+        var y = 200;
+        ctx.fillStyle = "lightgreen";
+        ctx.fillRect(x, y, 50, 50);
+        x = 200;
+        ctx.fillRect(x, y, 50, 50);
+        x = 300;
+        ctx.fillRect(x, y, 50, 50);
+        x = 400;
+        ctx.fillRect(x, y, 50, 50);
+    
+        //En  rad med 3 blå fyrkanter på y 300
+        y = 300
+        x = 100
+        ctx.fillStyle = "lightblue";
+        ctx.fillRect(x, y, 50, 50);
+        x = 200;
+        ctx.fillRect(x, y, 50, 50);
+        x = 300;
+        ctx.fillRect(x, y, 50, 50);
+        x = 400;
+        ctx.fillRect(x, y, 50, 50);
+
+        // Variable till bredd & höjd
+        x = 100
+        y = 400
+        var b = 70
+        var h = 70
+        ctx.fillRect(x, y, b, h);
+        x = 200
+        ctx.fillRect(x, y, b, h);
+        x = 300
+        ctx.fillRect(x, y, b, h);
+        x = 400
+        ctx.fillRect(x, y, b, h);
+    </script>
+</body>
+</html>

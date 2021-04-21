@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link rel="stylesheet" href="canvas.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="kontainer">
+        <div class="sidebar">
+            <h1>Canvas</h1>
+        </div>
+        <canvas>
+
+        </canvas>
+    </div>
+    <script>
+        const rityta = document.querySelector("canvas");
+
+        rityta.width = 600;
+        rityta.height = 600;
+
+        var ctx = rityta.getContext("2d");
+
+        // Skriva text med canvas
+        ctx.fillStyle = "darkgreen";
+        ctx.fillRect(80, 55, 50, 50);
+        ctx.strokeStyle = "darkgreen";
+        ctx.strokeRect(470, 55, 50, 50);
+
+        ctx.font = "60px Staatliches";
+        ctx.fillText("Canvas", 310, 100);
+
+        ctx.strokeText("Jacobs", 140, 100);
+
+    </script>
+</body>
+</html>
