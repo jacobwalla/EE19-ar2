@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link rel="stylesheet" href="canvas.css">
+</head>
+<body>
+    <canvas></canvas>
+    <script>
+        const ritYta = document.querySelector("canvas");
+
+        ritYta.width = 1280;
+        ritYta.height = 800;
+
+        var ctx = ritYta.getContext("2d");
+
+        //Huvud
+        ctx.beginPath();
+        ctx.arc(640, 400, 200, 0, 2 * Math.PI);
+        ctx.lineWidth = 5;
+        ctx.stroke();
+        
+        //Ögon
+        ctx.beginPath();
+        ctx.arc(540, 350, 30, 0, 2 * Math.PI)
+        ctx.lineWidth = 3;
+        ctx.stroke();
+
+        ctx.beginPath();
+        ctx.arc(740, 350, 30, 0, 2 * Math.PI)
+        ctx.lineWidth = 3;
+        ctx.stroke();
+
+        //Mun
+        ctx.beginPath();
+        ctx.moveTo(600, 500);
+        ctx.lineTo(640, 520);
+        ctx.lineTo(680, 500);
+        ctx.lineWidth = 3;
+        ctx.stroke();
+
+    </script>
+</body>
+</html>

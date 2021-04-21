@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link rel="stylesheet" href="canvas.css">
+</head>
+<body>
+    <canvas></canvas>
+    <script>
+        const ritYta = document.querySelector("canvas");
+
+        ritYta.width = 1280;
+        ritYta.height = 800;
+
+        var ctx = ritYta.getContext("2d");
+
+        ctx.beginPath();
+
+        ctx.moveTo(660, 150);
+
+        ctx.lineTo(400, 300);
+        ctx.lineTo(500, 300);
+        ctx.lineTo(500, 500);
+        ctx.lineTo(640, 500);
+        ctx.lineTo(640, 350);
+        ctx.lineTo(720, 350);
+        ctx.lineTo(720, 500);
+        ctx.lineTo(860, 500);
+        ctx.lineTo(860, 300);
+        ctx.lineTo(960, 300);
+        ctx.lineTo(660, 150);
+
+        ctx.lineWidth = 10;
+        ctx.stroke();
+    </script>
+</body>
+</html>

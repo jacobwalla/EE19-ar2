@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link rel="stylesheet" href="canvas.css">
+</head>
+<body>
+    <canvas></canvas>
+    <script>
+        const ritYta = document.querySelector("canvas");
+
+        ritYta.width = 1280;
+        ritYta.height = 800;
+
+        var ctx = ritYta.getContext("2d");
+
+        ctx.fillStyle = "whitesmoke";
+        ctx.fillRect(100, 100, 1080, 300);
+        ctx.fillStyle = "red";
+        ctx.fillRect(100, 400, 1080, 300);
+        
+        ctx.beginPath();
+        
+        ctx.moveTo(500, 400);
+
+        ctx.lineTo(100, 100);
+        ctx.lineTo(100, 700);
+        ctx.lineTo(500, 400);
+
+        ctx.fillStyle = "blue";
+        ctx.fill();
+    </script>
+</body>
+</html>
