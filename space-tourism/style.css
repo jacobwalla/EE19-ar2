@@ -1,0 +1,163 @@
+/* Enkel CSS-reset */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body, h1, h2, h3, h4, h5, h6, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: url(./bilder/annie-spratt-7CME6Wlgrdk-unsplash.jpg);
+}
+.kontainer {
+    width: 800px;
+    margin: auto;
+}
+/* Sidhuvudets Utseende */
+.sidhuvud {
+    margin-left: 75px;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.sidhuvud ul {
+    list-style-type: none;
+    margin: 30px;
+}
+.sidhuvud li {
+    display: inline;
+    font-family: 'Odibee Sans', cursive;
+    font-size: 35px;
+    text-transform: uppercase;
+    padding: 15px;
+}
+.sidhuvud li a {
+    font-family: 'Odibee Sans', cursive;
+    text-decoration: none;
+    color: #ffffff;
+    transition: all 0.7s;
+}
+.sidhuvud li a:hover {
+    color: #91b7ff;
+    font-size: 36px;
+    text-shadow: 0px 0px 10px #ffffff;
+}
+.sidhuvud .aktiv {
+    color: #ffffff;
+    font-size: 36px;
+    text-shadow: 0px 0px 10px #91b7ff;
+}
+.galleri {
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 40px;
+    box-shadow: 0px 0px 500px #91b7ff;
+}
+.litenrubrik {
+    font-family: 'Odibee Sans', cursive;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #163369;
+    text-shadow: 2px 2px 5px #ffffff;
+}
+.bilder {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+}
+.bilder img {
+    width: 100%;
+    border-radius: 15px;
+    transition: ease-out all 1s;
+}
+.bilder img:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 100px #ffffff;
+}
+.historia {
+    background: #26274275;
+    border-radius: 10px;
+    padding: 40px;
+    box-shadow: 0px 0px 500px #000000;
+}
+.historia p {
+    font-family: 'Odibee Sans', cursive;
+    color: #163369;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+.historia a {
+    text-decoration: none;
+    color: #684511;
+    transition: all 0.5s;
+}
+.historia a:hover {
+    text-decoration: none;
+    color: #fd9800;
+}
+.filmer {
+    background: #26274275;
+    border-radius: 10px;
+    padding: 40px;
+    box-shadow: 0px 0px 500px #6e84ff;
+}
+.bildotext {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 30px;
+    padding: 20px;
+}
+.bildotext img {
+    width: 100%;
+    height: 400px;
+}
+.bildotext h2 {
+    font-family: 'Odibee Sans', cursive;
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #163369;
+}
+.förstafilm p {
+    height: 300px;
+    font-family: 'Odibee Sans', cursive;
+    font-size: 20px;
+    margin-bottom: 30px;
+    color: #021a46;
+    padding: 10px;
+}
+.andrafilm p {
+    height: 300px;
+    font-family: 'Odibee Sans', cursive;
+    font-size: 20px;
+    margin-bottom: 30px;
+    color: #021a46;
+    padding: 10px;
+
+}
+table {
+    width: 700px;
+    margin: auto;
+}
+th {
+    font-family: 'Odibee Sans', cursive;
+    color: #6e84ff;
+    background: #021a46;
+    padding: 15px;
+    border-radius: 5px;
+}
+td {
+    font-family: 'Odibee Sans', cursive;
+    font-size: 20px;
+    color: #021a46;
+    text-align: center;
+    background: rgba(255, 255, 255, 0);
+    padding: 10px;
+    border: 5px solid #021a46;
+    border-radius: 10px;
+}
